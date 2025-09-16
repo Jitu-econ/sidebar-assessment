@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <h1>App</h1>
+    <div id="hamburger"><i class="fas fa-bars"></i></div>
+  </header>
+  
+
+  <aside class="sidebar-container" id="sidebarContainer">
+    <div class="left-sidebar">
+      <div class="header">
+        <i class="fas fa-briefcase"></i>
+      </div>
+      <div class="content">
+        <div class="main-items">
+            <button id="btnA" class="active"><i class="fas fa-tachometer-alt"></i></button>
+            <button id="btnB"><i class="fas fa-clipboard-check"></i></button>
+        </div>
+        <div class="footer-items">
+            <button id="btnTheme"><i class="fas fa-adjust"></i></button>
+            <button id="btnSettings"><i class="fas fa-cog"></i></button>
+            <button id="btnUser"><i class="far fa-user-circle"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-sidebar collapsed" id="rightSidebar">
+      <div class="toggle-container">
+        <span class="panel-name">Dashboard</span>
+        <button id="toggleBtn">
+          <i class="fas fa-chevron-right"></i>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+
+      
+    <div class="sidebar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="sidebarSearch" placeholder="Search..." />
+    </div>
+
+      <div id="panelA" class="panel"></div>
+
+      <div id="panelB" class="panel" style="display:none;"></div>
+    </div>
+</aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
